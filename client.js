@@ -16,4 +16,4 @@ socket.on('close', function () {
   console.log('closed')
 })
 
-socket.connect(25000, argv.host || '0.0.0.0')
+socket.connect(argv.port || 25000, argv.host || '0.0.0.0')

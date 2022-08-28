@@ -14,6 +14,6 @@ const server = net.createServer(function (socket) {
   socket.write('111')
 })
 
-server.listen(25000, argv.host || '0.0.0.0', function () {
+server.listen(argv.port || 25000, argv.host || '0.0.0.0', function () {
   console.log('listening', server.address())
 })
