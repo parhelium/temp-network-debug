@@ -3,7 +3,7 @@ const minimist = require('minimist')
 const argv = minimist(process.argv.slice(2))
 
 const server = net.createServer(function (socket) {
-	console.log('new client')
+  console.log('new client')
 
   socket.on('data', console.log)
 
